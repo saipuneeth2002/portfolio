@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      /* Basic CSS styling */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #0af519;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+      }
+      nav {
+        background-color: #fcd307;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem;
+        padding-left: 3cm;
+        padding-top: 1cm;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 1rem;
+      }
+      nav a:hover {
+        color: #ff8c00;
+      }
+      main {
+        padding: 2rem;
+      }
+      .contact {
+        text-align: left;
+        margin-top: 0.5rem;
+        margin-right: 20cm;
+      }
+      .avatar {
+        width: 300px;
+        border-radius: 8px;
+        height: 200px;
+        margin-top: 0.5cm;
+        margin-left: 2cm;
+      }
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 1cm;
+      }
+      .about {
+        flex: 1;
+        padding: 0 1rem;
+      }
+      .about p {
+        text-align: justify;
+      }
+      .box {
+        width: 180px;
+        height: 180px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+      }
+      .box-container {
+        margin-top: 2cm;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(239, 178, 232);
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        display: none;
+      }
+
+      .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+        display: none;
+      }
+      .box {
+        width: 180px;
+        height: 180px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        overflow: auto;
+      }
+      .recommendations {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .image {
+        width: 25px;
+        height: 25px;
+      }
+
+      popup h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+
+      .popup p {
+        font-size: 18px;
+        margin-bottom: 30px;
+      }
+
+      .ok-button {
+        /* Styles for the "OK" button */
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        margin-top: auto;
+      }
+      .popup-content {
+        /* Styles for the content inside the popup */
+        text-align: center;
+        padding: 30px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        max-width: 80%; /* Set the maximum width of the popup */
+      }
+    </style>
+  </head>
+
+  <header>
+    <h1>Portfolio</h1>
+  </header>
+
+  <nav>
+    <div class="contact">
+      K.Sai Puneeth
+      <pre></pre>
+      <i class="fa fa-envelope"></i> saipuneeth2504@gmail.com
+      <pre></pre>
+      <i class="fa fa-phone"></i> 7801091800
+    </div>
+    <div>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#recommendations">Recommendations</a>
+    </div>
+  </nav>
+  <body>
+    <main>
+      <div class="content">
+        <div class="avatar-container">
+          <img
+            class="avatar"
+            src="
+            "templates\WhatsApp Image 2024-02-05 at 02.09.05_3cd028dd.jpg"
+            alt="Men Avatar"
+          />
+        </div>
+
+        <div class="about" id="about">
+          <h1>Hi, I'm Sai Puneeth &#9995;</h1>
+          <p align="justify" style="margin-right: 7cm">
+            Hello, I'm Puneeth, And I am a passionate and skilled video editor with 
+            of experience in the industry. Throughout my career, I have developed a 
+            strong proficiency in various editing software and techniques, allowing 
+            me to bring creative visions to life.
+          </p>
+        </div>
+      </div>
+      <br />
+      <br />
+      <h2 style="padding-top: 4cm" id="skills">Skills</h2>
+      <div class="box-container">
+        <div class="box">
+          <img
+            src=download.jpeg
+            class="image"
+          />
+          <h3>Colour Grading</h3>
+          <p>1 years experience</p>
+        </div>
+
+        <div class="box">
+          <img
+            src="https://www.google.com/imgres?q=audio%20editing%20symbols&imgurl=https%3A%2F%2Fcdn5.vectorstock.com%2Fi%2F1000x1000%2F20%2F29%2Faudio-editor-icon-for-apps-vector-33782029.jpg&imgrefurl=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vector%2Faudio-editor-icon-for-apps-vector-33782029&docid=NjFvafE7vYAU4M&tbnid=xWgISdywldyFTM&vet=12ahUKEwim0O2vxdiFAxVZr1YBHYPmCIIQM3oECFkQAA..i&w=1000&h=1080&hcb=2&ved=2ahUKEwim0O2vxdiFAxVZr1YBHYPmCIIQM3oECFkQAA"
+            class="image"
+          />
+          <h3>Audio editing</h3>
+          <p>1 years experience</p>
+        </div>
+
+        <div class="box">
+          <img
+            src="https://www.google.com/imgres?q=trasitions%20%20symbols&imgurl=https%3A%2F%2Fwww.shutterstock.com%2Fimage-vector%2Fsquare-circle-arrow-transition-round-260nw-1787121335.jpg&imgrefurl=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Ftransition-icon&docid=tj5DyEiJZn3aAM&tbnid=cdf-JN4U6G24iM&vet=12ahUKEwiv3YXvxtiFAxU8sFYBHWbECCIQM3oECBkQAA..i&w=260&h=280&hcb=2&ved=2ahUKEwiv3YXvxtiFAxU8sFYBHWbECCIQM3oECBkQAA"
+            class="image"
+          />
+          <h3>Transitions</h3>
+          <p>1.5 years experience</p>
+        </div>
+
+        <div class="box">
+          <img
+            src="https://www.google.com/imgres?q=video%20effects%20%20symbols&imgurl=https%3A%2F%2Fstatic.thenounproject.com%2Fpng%2F3547823-200.png&imgrefurl=https%3A%2F%2Fthenounproject.com%2Fbrowse%2Ficons%2Fterm%2Fvideo-effects%2F&docid=Se_LJvsD_-CHKM&tbnid=ZB9dmL4KMnW0-M&vet=12ahUKEwiir4iixtiFAxUgslYBHa2rDH4QM3oECDwQAA..i&w=200&h=200&hcb=2&ved=2ahUKEwiir4iixtiFAxUgslYBHa2rDH4QM3oECDwQAA"
+            class="image"
+          />
+          <h3>Video Effects</h3>
+          <p>0.5 year experience</p>
+        </div>
+
+        
+      </div>
+      <br />
+      <br />
+      <section id="projects">
+        <h2 style="padding-top: 3cm">Projects</h2>
+        <div class="projects">
+          <div class="project">
+            <h3>Cool Random frames</h3>
+            <p align="justify" style="padding-right: 7cm">
+              It is a random frames which it shot on mobile and with smooth transition 
+              and with cool transitions and it shoots in different locations at different 
+              time.
+            </p>
+          </div>
+          <br />
+          <hr />
+          <br />
+          <div class="project">
+            <h3>Thambole Video</h3>
+            <p align="justify" style="padding-right: 7cm">
+              recently I capture the event which there are from kerala drums which name as 
+              thambol its a culture from the kerala
+            </p>
+          </div>
+          <br />
+          <hr />
+          <br />
+          
+        </div>
+        <br />
+        <br />
+      </section>
+      <section id="recommendations">
+        <h2>Recommendations</h2>
+        <div class="recommendations">
+          {% for recommendation in recommendations %}
+          <div class="box">
+            <!-- Display the text of the recommendation in the box container -->
+            <p>{{ recommendation['text'] }}</p>
+          </div>
+          {% endfor %}
+        </div>
+        <br />
+        <h2>Leave a Recommendation</h2>
+        <form action="/recommendations" method="post">
+          <textarea
+            name="recommendation"
+            rows="4"
+            cols="50"
+            placeholder="Write your recommendation here"
+          ></textarea>
+          <br />
+          <br />
+          <button type="submit" onclick="showPopup()">
+            Submit Recommendation
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Confirmation message pop-up -->
+    {% if show_popup %}
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <p>Thanks for leaving a recommendation!</p>
+        <button onclick="hidePopup()">OK</button>
+      </div>
+    </div>
+    {% endif %}
+
+    <script>
+      function showPopup() {
+        var popup = document.getElementById("popup");
+        var overlay = document.getElementById("overlay");
+        popup.style.display = "block";
+        overlay.style.display = "block";
+      }
+      function hidePopup() {
+        var popup = document.getElementById("popup");
+        var overlay = document.getElementById("overlay");
+        popup.style.display = "none";
+        overlay.style.display = "none";
+      }
+      // Call the showPopup function when the page loads
+      showPopup();
+    </script>
+  </body>
+</html>
